@@ -540,10 +540,10 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
     </figure>
     <div class="vs" role="table" aria-label="試作版とSwift版の違い">
       <div class="vs-row vs-head" role="row"><span role="columnheader"></span><span role="columnheader">試作版</span><span role="columnheader">Swift版</span></div>
-      <div class="vs-row" role="row"><span role="rowheader">画面の取得</span><span>コマごとに <code>screencapture</code> を起動</span><span><b>ScreenCaptureKit</b> で常時ストリーム(GPU処理)</span></div>
-      <div class="vs-row" role="row"><span role="rowheader">画面の送り方</span><span>JPEG。1コマ約278KB</span><span><b>H.264</b>(VideoToolboxでハードウェア圧縮)。動きのあるコマ約22KB、静止時約0.3KB</span></div>
-      <div class="vs-row" role="row"><span role="rowheader">iPhone側の再生</span><span>画像を順に表示</span><span><b>WebCodecs / MSE</b> で動画として再生。使えない環境ではJPEGに自動で切り替え</span></div>
-      <div class="vs-row" role="row"><span role="rowheader">入力</span><span>外部ツール(cliclick)経由</span><span><b>CGEvent</b> でアプリ内から直接送出</span></div>
+      <div class="vs-row" role="row"><span role="rowheader">画面の取得</span><span>1コマごとに画面を撮影</span><span><b>画面を途切れなく取り込む</b>(GPUで処理)</span></div>
+      <div class="vs-row" role="row"><span role="rowheader">画面の送り方</span><span>JPEG。1コマ約278KB</span><span><b>動画(H.264)として圧縮</b>(専用のハードウェアを使用)。動きのあるコマ約22KB、静止時約0.3KB</span></div>
+      <div class="vs-row" role="row"><span role="rowheader">iPhone側の再生</span><span>画像を順に表示</span><span><b>動画として再生</b>。使えない環境では画像に自動で切り替え</span></div>
+      <div class="vs-row" role="row"><span role="rowheader">入力</span><span>外部ツール経由</span><span><b>アプリから直接送る</b></span></div>
       <div class="vs-row" role="row"><span role="rowheader">UI</span><span>iPhone風の画面の原型</span><span><b>大幅に作り直し</b>、指で迷わず触れる形に</span></div>
       <div class="vs-row" role="row"><span role="rowheader">インストール</span><span>Homebrew・Python仮想環境・常駐設定が必要</span><span><b>Mios.app を入れるだけ</b></span></div>
       <div class="vs-row" role="row"><span role="rowheader">接続の安全性</span><span>Macと同じWi‑Fiにいれば誰でも接続できた</span><span><b>ペアリング</b>(QRか6桁コード)したiPhoneだけ</span></div>
