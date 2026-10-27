@@ -93,7 +93,7 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
 .compare figure:last-child { position: absolute; right: 0; bottom: 0; width: 25.5%; z-index: 1; }
 .compare figure:last-child .device { filter: drop-shadow(0 2.4cqw 4cqw rgba(0,0,0,.28)); }
 .compare figure { margin: 0; min-width: 0; container-type: inline-size; }
-.figcap { font-size: 13px; color: var(--faint); margin-top: 16px; text-align: center; }
+.figcap { font-size: clamp(15px, 1.8vw, 19px); font-weight: 600; color: var(--muted); margin-top: 16px; text-align: center; }
 .device { position: relative; max-width: 100%; padding: 1.25cqw; border-radius: 16.5cqw;
   background: #c9cacd;
   box-shadow: 0 34px 60px -26px rgba(10,12,16,0.40), 0 8px 18px -8px rgba(10,12,16,0.20); }
@@ -379,7 +379,7 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
 
 footer { background: var(--band); padding-block: 26px 40px; font-size: 12px; color: var(--faint); }
 a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
-@media (max-width: 680px) { .compare { padding-top: 16%; } .compare figure:first-child { width: 86%; } .compare figure:last-child { width: 30%; } .compare .figcap { white-space: nowrap; font-size: 12px; } .compare figure:last-child .figcap { display: flex; justify-content: flex-end; } }
+@media (max-width: 680px) { .compare { padding-top: 16%; } .compare figure:first-child { width: 86%; } .compare figure:last-child { width: 30%; } .compare .figcap { white-space: nowrap; font-size: 14px; } .compare figure:first-child .figcap { text-align: left; } .compare figure:last-child .figcap { display: flex; justify-content: flex-end; } }
 @media (prefers-reduced-motion: reduce) { .carousel { scroll-behavior: auto; } }
 </style>
 </head>
