@@ -43,7 +43,7 @@ p { margin: 0; }
 .band-night .eyebrow { color: var(--on-night-muted); }
 #available .eyebrow { font-size: 15px; font-weight: 600; }
 .headline { font-size: clamp(36px, 6.4vw, 64px); line-height: 1.1; letter-spacing: -0.015em; margin-top: 10px; }
-.guide-head { font-size: clamp(26px, 4.2vw, 44px); }
+.headline-sm { font-size: clamp(26px, 4.2vw, 44px); }
 .subhead { font-size: clamp(19px, 2.4vw, 24px); line-height: 1.5; color: var(--muted); margin: 22px auto 0; max-width: 32em; font-weight: 500; }
 .band-night .subhead { color: var(--on-night-muted); }
 
@@ -116,7 +116,7 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
 .story b { color: var(--fg); }
 .ph { display: inline-block; }
 .picnic, .eco-title { text-wrap: balance; }
-@media (max-width: 480px) { .headline { font-size: clamp(28px, 8.2vw, 36px); } .guide-head { font-size: clamp(22px, 6.6vw, 28px); } }
+@media (max-width: 480px) { .headline { font-size: clamp(28px, 8.2vw, 36px); } .headline-sm { font-size: clamp(20px, 6.1vw, 28px); } }
 .story { text-wrap: pretty; }
 .story + .story { margin-top: 1em; }
 .picnic { margin: clamp(48px, 7vw, 80px) auto 0; max-width: 20em; font-size: clamp(26px, 4vw, 44px); line-height: 1.3; font-weight: 900; letter-spacing: -0.015em; }
@@ -576,7 +576,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 <section class="center" id="guide">
   <div class="wrap wide">
     <p class="eyebrow">画面の見方</p>
-    <h2 class="headline guide-head"><span class="ph">操作バー・</span><span class="ph">Macの画面・</span><span class="ph">ホームバーの</span><span class="ph">3つで構成</span></h2>
+    <h2 class="headline headline-sm"><span class="ph">操作バー・</span><span class="ph">Macの画面・</span><span class="ph">ホームバーの</span><span class="ph">3つで構成</span></h2>
     <p class="subhead"><span class="ph">よく使うのは、</span><span class="ph">左上の3つのボタンと、</span><span class="ph">一番下のホームバーです。</span><span class="ph">どちらもiPhoneと</span><span class="ph">同じ感覚で、</span><span class="ph">指でそのまま触れます。</span></p>
     <figure class="screen-guide">
       <div class="guide-scroll"><svg class="guide" viewBox="0 0 1200 1150" role="img" aria-label="Miosの画面の解説。操作バーのウィンドウ操作、遅延計、アプリボタン、操作モード、アプリ切替、その他のメニュー。画面のデスクトップ一覧、ウィンドウ、ジェスチャーの行き先、ホームバー。">
@@ -645,7 +645,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 <section class="band-night center" id="gestures">
   <div class="wrap">
     <p class="eyebrow">操作</p>
-    <h2 class="headline"><span class="ph">iPhoneの</span><span class="ph">ジェスチャーが、</span><br><span class="ph">そのまま</span><span class="ph">Macの</span><span class="ph">操作になる。</span></h2>
+    <h2 class="headline headline-sm"><span class="ph">iPhoneの</span><span class="ph">ジェスチャーが、</span><br><span class="ph">そのまま</span><span class="ph">Macの</span><span class="ph">操作になる。</span></h2>
     <div class="bento" style="text-align:left">
       <div class="tile"><p class="from">タップ</p><p class="to">クリック</p></div>
       <div class="tile"><p class="from">長押し</p><p class="to">右クリック</p></div>
