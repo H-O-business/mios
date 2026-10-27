@@ -507,7 +507,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
       <div><dt>機能要件</dt><dd>Macの画面表示 / タッチとキーボードでの操作(日本語入力を含む) / 端末のペアリング / 外出先からの接続</dd></div>
       <div><dt>非機能要件:導入</dt><dd>Macは「Mios」を起動するだけ。iPhoneはQRコードを読み取るか、コードを入れるだけ</dd></div>
       <div><dt>非機能要件:セキュリティ</dt><dd>登録した端末以外は接続不可。登録は6桁の使い捨てコード、または6〜8桁のPINで行い、間違いが続くとロック。外出先の通信は端末間で暗号化</dd></div>
-      <div><dt>非機能要件:性能</dt><dd>操作の遅れを感じさせないこと。遅延を利用者が画面上で常に確認できること(仕様:通常10fps・必要時30fps、80ms未満を「即時」と表示)</dd></div>
+      <div><dt>非機能要件:性能</dt><dd>操作の遅れを感じさせないこと。遅延を利用者が画面上で常に確認できること(仕様:通常10fps・必要時30fps)</dd></div>
       <div><dt>制約・前提</dt><dd>macOS 27で動作確認。Mac側で画面収録とアクセシビリティの権限が必要。外出先からの接続にはTailscaleまたは自前サーバーが必要</dd></div>
       <div><dt>対象外(v1)</dt><dd>Mac App Storeでの配布(他のアプリのウィンドウ操作に必要な権限が、App Storeの制限と両立しないため。Developer IDで署名して直接配布)/ iPhoneのネイティブアプリ化(Webアプリで提供)</dd></div>
     </dl>
@@ -665,7 +665,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
     <h2 class="headline"><span class="ph">場所に</span><span class="ph">合わせて、</span><br><span class="ph">3つから</span><span class="ph">選べる。</span></h2>
     <p class="subhead">どれか1つでつながります。</p>
     <div class="routes" style="text-align:left">
-      <div class="route"><p class="via">MacとiPhoneが<br>同じWi‑Fi</p><h3>家や職場で</h3><p>Macの名前でそのまま接続します。IPアドレスが変わっても繋がり続けます。</p></div>
+      <div class="route"><p class="via">MacとiPhoneが<br>同じWi‑Fi</p><h3>家や職場で</h3><p>Macの名前でそのまま接続します。</p></div>
       <div class="route"><p class="via">Tailscale</p><h3>外出先から</h3><p>無料のTailscaleアプリをMacとiPhoneに入れ、同じアカウントでログインするだけで、外からもつながります。</p></div>
       <div class="route"><p class="via">自前サーバー</p><h3>どこからでも</h3><p>自分のCloudflareアカウントに中継サーバーを立てます。通信は端末間で暗号化され、サーバーは中身を見られません。</p></div>
     </div>
