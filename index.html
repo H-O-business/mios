@@ -506,7 +506,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
       <div><dt>対象ユーザー</dt><dd>Macを持ち、家の中や外出先でiPhoneからMacを触りたい人。ターミナルは使わない前提</dd></div>
       <div><dt>機能要件</dt><dd>Macの画面表示 / タッチとキーボードでの操作(日本語入力を含む) / 端末のペアリング / 外出先からの接続</dd></div>
       <div><dt>非機能要件:導入</dt><dd>Macは「Mios」を起動するだけ。iPhoneはQRコードを読み取るか、コードを入れるだけ</dd></div>
-      <div><dt>非機能要件:セキュリティ</dt><dd>登録した端末以外は接続不可。登録は6桁の使い捨てコード、または6〜8桁のPINで行い、間違いが続くとロック。外出先の通信は端末間で暗号化</dd></div>
+      <div><dt>非機能要件:セキュリティ</dt><dd>登録した端末以外は接続不可。登録は6桁のコード、またはPINで行い、間違いが続くとロック。外出先の通信は端末間で暗号化</dd></div>
       <div><dt>非機能要件:性能</dt><dd>操作の遅れを感じさせないこと。遅延を利用者が画面上で常に確認できること(仕様:通常10fps・必要時30fps)</dd></div>
       <div><dt>制約・前提</dt><dd>macOS 27で動作確認。Mac側で画面収録とアクセシビリティの権限が必要。外出先からの接続にはTailscaleまたは自前サーバーが必要</dd></div>
       <div><dt>対象外(v1)</dt><dd>Mac App Storeでの配布(他のアプリのウィンドウ操作に必要な権限が、App Storeの制限と両立しないため。Developer IDで署名して直接配布)/ iPhoneのネイティブアプリ化(Webアプリで提供)</dd></div>
@@ -545,7 +545,6 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
       <div class="vs-row" role="row"><span role="rowheader">iPhone側の再生</span><span>画像を順に表示</span><span><b>動画として再生</b>。使えない環境では画像に自動で切り替え</span></div>
       <div class="vs-row" role="row"><span role="rowheader">入力</span><span>外部ツール経由</span><span><b>アプリから直接送る</b></span></div>
       <div class="vs-row" role="row"><span role="rowheader">UI</span><span>iPhone風の画面の原型</span><span><b>大幅に作り直し</b>、指で迷わず触れる形に</span></div>
-      <div class="vs-row" role="row"><span role="rowheader">インストール</span><span>Homebrew・Python仮想環境・常駐設定が必要</span><span><b>Mios.app を入れるだけ</b></span></div>
       <div class="vs-row" role="row"><span role="rowheader">接続の安全性</span><span>Macと同じWi‑Fiにいれば誰でも接続できた</span><span><b>ペアリング</b>(QRか6桁コード)したiPhoneだけ</span></div>
       <div class="vs-row" role="row"><span role="rowheader">外出先から</span><span>Tailscaleのみ</span><span>Tailscaleに加えて、<b>自前サーバー</b>経由(端末間で暗号化)</span></div>
     </div>
@@ -677,7 +676,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
         <p class="pn-title">「Pair iPhone」のUI</p>
         <dl class="pn-list">
           <div><dt>役割</dt><dd>iPhoneを登録するとき、Macに開くウィンドウです。iPhoneはカメラでQRコードを読み取るか、下の6桁のコードを入力するだけでつながります。</dd></div>
-          <div><dt>画面の構成</dt><dd>3つの接続方法をタブで切り替え、QRコードは1つずつ大きく表示します。まだ設定していない接続方法も同じタブの中から設定に進めるので、どの方法を選べるかがひと目で分かります。</dd></div>
+          <div><dt>画面の構成</dt><dd>3つの接続方法をタブで切り替え、QRコードは1つずつ大きく表示します。3つの接続方法を1つの画面で確認できるので、どの方法を選べるかがひと目で分かります。</dd></div>
           <div><dt>QRコード</dt><dd>アプリの印象に合わせて、丸いドットとアイコン入りのデザインにしました。iPhoneの標準カメラで読めることを優先し、規格は通常のQRコードのまま、見た目だけを整えています。</dd></div>
         </dl>
       </div>
@@ -694,7 +693,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
     <p class="cmp-note">外出先なら、速さと実績のあるTailscaleが第一候補です。自前サーバーは、iPhoneにVPNアプリを入れられない場合や、Tailscaleに依存したくない場合の選択肢です。</p>
 
     <h3 class="eco-title"><span class="nw">Tailscaleでつないだときの</span><span class="nw">全体像</span></h3>
-    <p class="eco-lede">MacとiPhoneを同じアカウントのTailscaleでつなぐと、外出先からでも家の中と同じように直接つながります。ルーターの設定は必要ありません。</p>
+    <p class="eco-lede">MacとiPhoneを同じアカウントのTailscaleでつなぐと、外出先からでも家の中と同じように直接つながります。</p>
     <figure class="eco2" role="img" aria-label="iPhoneとMacがTailscale(WireGuardベースのメッシュVPN)でP2P接続される図。①iPhoneからタップ・スワイプ・文字がMacへ届き、②Macが実行し、③画面の映像と音がiPhoneへ戻る。">
       <svg class="eco-h" viewBox="0 0 960 300" xmlns="http://www.w3.org/2000/svg">
         <defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1d1d1f"/></marker>
