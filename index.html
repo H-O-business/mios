@@ -57,7 +57,7 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
 .localnav .name { font-size: 15px; font-weight: 600; letter-spacing: .01em; white-space: nowrap; margin-right: auto; text-decoration: none; color: var(--fg); }
 .localnav a.link { font-size: 12.5px; color: var(--fg); text-decoration: none; opacity: .8; white-space: nowrap; }
 .localnav a.link:hover { opacity: 1; }
-@media (max-width: 720px) { .localnav a.link { display: none; } }
+@media (max-width: 860px) { .localnav a.link { display: none; } }
 
 /* ── hero ──────────────────────────────────────────────────────────────── */
 .hero { padding-block: clamp(28px, 4vw, 48px) clamp(64px, 9vw, 110px); }
@@ -90,6 +90,8 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
 .compare figure:last-child { position: absolute; right: 0; bottom: 0; width: 25.5%; z-index: 1; }
 .compare figure:last-child .device { filter: drop-shadow(0 2.4cqw 4cqw rgba(0,0,0,.28)); }
 .compare figure { margin: 0; min-width: 0; container-type: inline-size; }
+.compare .figcap { white-space: nowrap; }
+.compare figure:last-child .figcap { display: flex; justify-content: flex-end; }
 .figcap { font-size: clamp(15px, 1.5vw, 16px); font-weight: 600; color: var(--muted); margin-top: 16px; text-align: center; }
 .device { position: relative; max-width: 100%; padding: 1.25cqw; border-radius: 16.5cqw;
   background: #c9cacd;
@@ -418,7 +420,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
         </figure>
       </div>
     </div>
-    <p class="lede">MacをiPhoneから操作するアプリです。画面を映すだけでなく、ホームバーやタップなど、<strong>操作そのものをiPhoneの感覚に置き換えます</strong>。</p>
+    <p class="lede"><span class="ph">MacをiPhoneから</span><span class="ph">操作するアプリです。</span><span class="ph">画面を映すだけでなく、</span><span class="ph">ホームバーやタップなど、</span><strong><span class="ph">操作そのものを</span><span class="ph">iPhoneの感覚に</span><span class="ph">置き換えます。</span></strong></p>
     <p class="setup">Mac:Miosを起動するだけ　/　iPhone:リンクを開いてPINを入れるだけ</p>
     <p class="role-sum">要件と仕様、デザインの調整、検証まで私が担当し、コードはAIが書いています。2026年4月に試作を始め、10月に現在のバージョンが完成しました。<a href="#made">開発の歩みを見る ›</a></p>
   </div>
