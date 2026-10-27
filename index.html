@@ -311,6 +311,7 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
 .timeline li p:last-child { font-size: 15px; line-height: 1.65; color: var(--muted); margin: 8px 0 0; }
 @media (max-width: 640px) { .timeline { grid-template-columns: 1fr; gap: 26px; } }
 .made p.body.left { text-align: left; max-width: 860px; }
+.band-night.made p.body { color: var(--on-night-muted); }
 #made .wrap > .eyebrow, #made .wrap > .headline, #made .wrap > p.body { text-align: left; max-width: 860px; margin-left: auto; margin-right: auto; }
 #made .wrap > .headline { text-wrap: wrap; font-size: clamp(26px, 3.6vw, 38px); line-height: 1.3; letter-spacing: -0.005em; }
 #made .wrap > .eyebrow { font-size: 15px; }
@@ -389,6 +390,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
     <a class="name" href="#top">Hiroshi Oida Portfolio</a>
     <a class="link" href="#demo">動画</a>
     <a class="link" href="#story">なぜ作ったか</a>
+    <a class="link" href="#lessons">注力したこと</a>
     <a class="link" href="#highlights">ハイライト</a>
     <a class="link" href="#made">開発の歩み</a>
     <a class="link" href="#guide">画面の見方</a>
@@ -455,6 +457,20 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
     </div>
     <p class="picnic"><span class="ph">ピクニックに</span><span class="ph">出ていても、</span><br><span class="ph">家のMacに</span><span class="ph">そのまま</span><span class="ph">繋がっている。</span></p>
     <p class="subhead"><span class="ph">作りたかったのは、</span><span class="ph">その感覚です。</span></p>
+  </div>
+</section>
+
+<section class="band-night center made" id="lessons">
+  <div class="wrap">
+    <h2 class="headline">開発で注力したこと</h2>
+    <p class="body left">生成AIを活用した開発では、以下のことに注力しておりました。</p>
+    <h3 class="made-sub">1. 方向性を決めること</h3>
+    <p class="body left">「Chromeリモートデスクトップと同じ手間で、よりiPhoneらしく使える」ことを目標に置き、それを実現するためのアイディアをひたすら出し続けました。</p>
+    <h3 class="made-sub">2. 改良案を出し続けること</h3>
+    <p class="body left">毎日実機で使い、気づいた不具合や不足を次の改良につなげてきました。特にホームバーの操作感や、グラフィック面は何度も実際に触りながら改良しました。改版は試作版とSwift版を合わせて160回を超えています。この経験をもとに、今後はいかにダイレクトに最終盤まで到達できるか、その時間とレビュー回数を圧縮していくことが課題です。</p>
+    <h3 class="made-sub">3. 余計な機能を削ること</h3>
+    <p class="body left">Macは起動するだけ、iPhoneはリンクを開いてPINを入れるだけ、という手軽さを保つため、機能を増やすことより絞ることを優先しました。ボタンをなるべくUIから排除し、客観的に見て誰もが使いやすいデザインを目指しました。</p>
+    <p class="body left">これらのアプリ開発の経験は、今後の仕事でも活かせると考えています。</p>
   </div>
 </section>
 
@@ -745,20 +761,6 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
       <div class="spec"><dt>ペアリング</dt><dd>QRまたは6桁コードで一度だけ</dd></div>
       <div class="spec"><dt>Mac側の常駐</dt><dd>メニューバーのアイコン1つ<img class="spec-shot" src="menubar-mios4.webp" alt="Macのメニューバー。iPhoneのアイコンと「Mios」の文字の項目が選択され、マウスのカーソルが乗っている。" loading="lazy"></dd></div>
     </dl>
-  </div>
-</section>
-
-<section class="center made" id="lessons">
-  <div class="wrap">
-    <h2 class="headline">開発で注力したこと</h2>
-    <p class="body left">生成AIを活用した開発では、以下のことに注力しておりました。</p>
-    <h3 class="made-sub">1. 方向性を決めること</h3>
-    <p class="body left">「Chromeリモートデスクトップと同じ手間で、よりiPhoneらしく使える」ことを目標に置き、それを実現するためのアイディアをひたすら出し続けました。</p>
-    <h3 class="made-sub">2. 改良案を出し続けること</h3>
-    <p class="body left">毎日実機で使い、気づいた不具合や不足を次の改良につなげてきました。特にホームバーの操作感や、グラフィック面は何度も実際に触りながら改良しました。改版は試作版とSwift版を合わせて160回を超えています。この経験をもとに、今後はいかにダイレクトに最終盤まで到達できるか、その時間とレビュー回数を圧縮していくことが課題です。</p>
-    <h3 class="made-sub">3. 余計な機能を削ること</h3>
-    <p class="body left">Macは起動するだけ、iPhoneはリンクを開いてPINを入れるだけ、という手軽さを保つため、機能を増やすことより絞ることを優先しました。ボタンをなるべくUIから排除し、客観的に見て誰もが使いやすいデザインを目指しました。</p>
-    <p class="body left">これらのアプリ開発の経験は、今後の仕事でも活かせると考えています。</p>
   </div>
 </section>
 
