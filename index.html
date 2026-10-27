@@ -687,7 +687,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
       <div class="cmp-row" role="row"><span role="rowheader">経路</span><span>家のネットワーク内で直接</span><span>通常は端末どうしで直接。つながらない回線ではTailscaleの中継を経由</span><span>常に、自分のCloudflareに置いた中継プログラムを経由(Cloudflare Workersで動作)</span></div>
       <div class="cmp-row" role="row"><span role="rowheader">速さ</span><span><b>最速</b></span><span><b>速い</b>(直接つながれば中継なし)</span><span>中継の分だけ遅延が増える</span></div>
       <div class="cmp-row" role="row"><span role="rowheader">暗号化</span><span>ペアリング認証あり。暗号化は配布前に対応</span><span>WireGuardで端末間暗号化</span><span>Mios独自の端末間暗号化(AES‑256‑GCM)。中継は中身を読めない</span></div>
-      <div class="cmp-row" role="row"><span role="rowheader">iPhone側の準備</span><span>なし</span><span>Tailscaleアプリと同じアカウント</span><span><b>なし</b>(Safariで開くだけ)</span></div>
+      <div class="cmp-row" role="row"><span role="rowheader">iPhone側の準備</span><span>なし</span><span>Tailscaleアプリと同じアカウント</span><span><b>なし</b>(ブラウザで開くだけ)</span></div>
       <div class="cmp-row" role="row"><span role="rowheader">Mac側の準備</span><span>なし</span><span>Tailscaleアプリ</span><span>Cloudflareアカウント(中継の設置はMiosが自動で)</span></div>
     </div>
     <p class="cmp-note">外出先なら、速さと実績のあるTailscaleが第一候補です。自前サーバーは、iPhoneにVPNアプリを入れられない場合や、Tailscaleに依存したくない場合の選択肢です。</p>
@@ -701,7 +701,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
         <rect x="100" y="40" width="96" height="190" rx="24" fill="#fff" stroke="#1d1d1f" stroke-width="3"/>
         <rect x="132" y="52" width="32" height="9" rx="4.5" fill="#1d1d1f"/>
         <text x="148" y="142" text-anchor="middle" font-size="18" font-weight="700" fill="#1d1d1f">iPhone</text>
-        <text x="148" y="266" text-anchor="middle" font-size="14" fill="#6e6e73">Safari・インストール不要</text>
+        <text x="148" y="266" text-anchor="middle" font-size="14" fill="#6e6e73">ブラウザ・インストール不要</text>
         <rect x="738" y="64" width="146" height="104" rx="10" fill="#fff" stroke="#1d1d1f" stroke-width="3"/>
         <rect x="718" y="168" width="186" height="9" rx="4.5" fill="#1d1d1f"/><rect x="791" y="168" width="40" height="3.5" rx="1.75" fill="#f5f5f7"/>
         <text x="811" y="122" text-anchor="middle" font-size="18" font-weight="700" fill="#1d1d1f">Mac</text>
@@ -718,7 +718,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
         <rect x="148" y="16" width="64" height="126" rx="17" fill="#fff" stroke="#1d1d1f" stroke-width="3"/>
         <rect x="169" y="25" width="22" height="6" rx="3" fill="#1d1d1f"/>
         <text x="180" y="86" text-anchor="middle" font-size="14" font-weight="700" fill="#1d1d1f">iPhone</text>
-        <text x="180" y="164" text-anchor="middle" font-size="12.5" fill="#6e6e73">Safari・インストール不要</text>
+        <text x="180" y="164" text-anchor="middle" font-size="12.5" fill="#6e6e73">ブラウザ・インストール不要</text>
         <line x1="150" y1="184" x2="150" y2="376" stroke="#1d1d1f" stroke-width="2.5" marker-end="url(#ahv)"/>
         <text x="136" y="318" text-anchor="end" font-size="13" font-weight="700" fill="#1d1d1f">① タップ・</text>
         <text x="136" y="337" text-anchor="end" font-size="13" font-weight="700" fill="#1d1d1f">スワイプ・文字</text>
