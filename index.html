@@ -176,7 +176,7 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
 .tile { background: var(--tile-night); border-radius: 24px; padding: 30px 26px 28px; min-width: 0; display: flex; flex-direction: column; gap: 8px; }
 .tile .from { font-size: 15px; color: var(--on-night-muted); font-weight: 500; }
 .tile .to { font-size: clamp(24px, 3vw, 30px); font-weight: 700; letter-spacing: -0.01em; color: var(--on-night); line-height: 1.25; }
-.tile.wide-tile { grid-column: span 2; }
+.tile.wide-tile { grid-column: span 2; justify-content: center; }
 @media (max-width: 720px) { .bento { grid-template-columns: repeat(2, 1fr); } .tile.m-wide { grid-column: span 2; } }
 .tile .nw { white-space: nowrap; }
 /* Phones: two tiles per row leave ~125px of text width; at the desktop size
@@ -654,7 +654,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
       <div class="tile"><p class="from">3本指</p><p class="to"><span class="nw">コピー /</span> <span class="nw">ペースト</span></p></div>
       <div class="tile"><p class="from"><span class="nw">ホームバーを上へ</span></p><p class="to">Mission Control</p></div>
       <div class="tile m-wide"><p class="from"><span class="nw">トラックパッドモード</span></p><p class="to">ポインタだけ動かす</p></div>
-      <div class="tile wide-tile"><p class="from">入力欄をタップ</p><p class="to"><span class="nw">iPhoneのキーボードが開き、</span><span class="nw">日本語も英語も</span><span class="nw">そのまま入力</span></p></div>
+      <div class="tile wide-tile"><p class="to"><span class="nw">iPhoneのキーボードが開き、</span><span class="nw">日本語も英語も</span><span class="nw">そのまま入力</span></p></div>
     </div>
   </div>
 </section>
