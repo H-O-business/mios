@@ -380,6 +380,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 @media (max-width: 680px) { .compare { padding-top: 16%; } .compare figure:first-child { width: 86%; } .compare figure:last-child { width: 30%; } .compare .figcap { white-space: nowrap; font-size: 14px; } .compare figure:first-child .figcap { text-align: left; } .compare figure:last-child .figcap { display: flex; justify-content: flex-end; } }
 @media (max-width: 359px) { .compare .figcap { font-size: 12px; } }
 @media (prefers-reduced-motion: reduce) { .carousel { scroll-behavior: auto; } }
+@media print { * { -webkit-print-color-adjust: exact; print-color-adjust: exact; } .localnav { position: static; } figure, .tile, .card, .spec, .route, .req-table > div, .vs-row, .cmp-row, h2, h3 { break-inside: avoid; } h2, h3 { break-after: avoid; } }
 </style>
 </head>
 <body>
