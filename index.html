@@ -314,7 +314,7 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
 @media (max-width: 640px) { .timeline { grid-template-columns: 1fr; gap: 26px; } }
 .made p.body.left { text-align: left; max-width: 860px; }
 .band-night.made p.body { color: var(--on-night-muted); }
-#made .wrap > .eyebrow, #made .wrap > .headline, #made .wrap > p.body { text-align: left; max-width: 860px; margin-left: auto; margin-right: auto; }
+#story .wrap > .eyebrow, #story .wrap > .headline, #made .wrap > .eyebrow, #made .wrap > .headline, #made .wrap > p.body { text-align: left; max-width: 860px; margin-left: auto; margin-right: auto; }
 #made .wrap > .headline { text-wrap: wrap; font-size: clamp(26px, 3.6vw, 38px); line-height: 1.3; letter-spacing: -0.005em; }
 #made .wrap > .eyebrow { font-size: 15px; }
 #made .role-table { margin-top: 24px; margin-bottom: 0; }
@@ -448,17 +448,13 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
   </div>
 </section>
 
-<section class="band-light center" id="story">
+<section class="band-light made" id="story">
   <div class="wrap">
     <p class="eyebrow">なぜ作ったか</p>
-    <h2 class="headline headline-sm"><span class="ph">出先から</span><span class="ph">Macで</span><br><span class="ph">コーディング</span><span class="ph">したかった。</span></h2>
-    <div style="margin-top: clamp(40px, 6vw, 64px)">
-      <p class="story"><span class="ph">一般的な</span><span class="ph">リモート操作アプリは、</span><span class="ph">Macの横長の画面を、</span><span class="ph">そのまま</span><span class="ph">iPhoneに表示します。</span></p>
-      <p class="story"><span class="ph">Miosは、</span><span class="ph">画面をiPhoneの形に</span><span class="ph">合わせ、</span><b><span class="ph">触り方ごと</span><span class="ph">iPhoneに</span><span class="ph">置き換えます。</span></b></p>
-      <p class="story"><span class="ph">ボタンは指で</span><span class="ph">押せる大きさに。</span><span class="ph">切り替えは</span><span class="ph">いつものスワイプで。</span><b><span class="ph">新しく覚えることは、</span><span class="ph">ほとんどありません。</span></b></p>
-    </div>
-    <p class="picnic"><span class="ph">ピクニックに</span><span class="ph">出ていても、</span><br><span class="ph">家のMacに</span><span class="ph">そのまま</span><span class="ph">繋がっている。</span></p>
-    <p class="subhead"><span class="ph">作りたかったのは、</span><span class="ph">その感覚です。</span></p>
+    <h2 class="headline headline-sm"><span class="ph">外出先から、</span><span class="ph">Macで</span><span class="ph">コーディングするため</span></h2>
+    <p class="body left">ピクニックなどの外出先からも、家のMacで生成AIを使ったコーディングを続けたいと考えたのがきっかけです。</p>
+    <p class="body left">一般的なリモート操作アプリは、Macの横長の画面をそのままiPhoneに表示するため、iPhoneでは思うように操作できませんでした。</p>
+    <p class="body left">Miosでは、画面をiPhoneの縦横比に合わせ、タップやスワイプなどiPhoneと同じ操作でMacを動かせるようにしました。ボタンは指で押せる大きさにし、新しく覚える操作をできるだけ減らしています。</p>
   </div>
 </section>
 
