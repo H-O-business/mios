@@ -31,20 +31,20 @@ body { background: var(--bg); color: var(--fg); font-family: var(--font); font-s
   -webkit-font-smoothing: antialiased; letter-spacing: 0.01em; }
 .wrap { max-width: 980px; margin: 0 auto;
   padding-left: max(22px, env(safe-area-inset-left, 0px)); padding-right: max(22px, env(safe-area-inset-right, 0px)); }
-.wide { max-width: 1180px; }
-section { padding-block: clamp(72px, 11vw, 132px); }
+.wide { max-width: 1040px; }
+section { padding-block: clamp(64px, 9vw, 104px); }
 .band-light { background: var(--band); }
 #made .req-table, #made .ba-pair, #made .handover > div { background: var(--bg); }
 .band-night { background: var(--night); color: var(--on-night); }
 h1, h2, h3 { margin: 0; text-wrap: balance; font-weight: 700; }
 p { margin: 0; }
 .center { text-align: center; }
-.eyebrow { font-size: 19px; font-weight: 700; color: var(--muted); }
+.eyebrow { font-size: 17px; font-weight: 700; color: var(--muted); }
 .band-night .eyebrow { color: var(--on-night-muted); }
 #available .eyebrow { font-size: 15px; font-weight: 600; }
-.headline { font-size: clamp(36px, 6.4vw, 64px); line-height: 1.1; letter-spacing: -0.015em; margin-top: 10px; }
-.headline-sm { font-size: clamp(26px, 4.2vw, 44px); }
-.subhead { font-size: clamp(19px, 2.4vw, 24px); line-height: 1.5; color: var(--muted); margin: 22px auto 0; max-width: 32em; font-weight: 500; }
+.headline { font-size: clamp(36px, 5.2vw, 52px); line-height: 1.1; letter-spacing: -0.015em; margin-top: 10px; }
+.headline-sm { font-size: clamp(26px, 3.6vw, 36px); }
+.subhead { font-size: clamp(18px, 2vw, 21px); line-height: 1.5; color: var(--muted); margin: 22px auto 0; max-width: 32em; font-weight: 500; }
 .band-night .subhead { color: var(--on-night-muted); }
 
 /* ── local nav ─────────────────────────────────────────────────────────── */
@@ -57,19 +57,17 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
 .localnav .name { font-size: 15px; font-weight: 600; letter-spacing: .01em; white-space: nowrap; margin-right: auto; text-decoration: none; color: var(--fg); }
 .localnav a.link { font-size: 12.5px; color: var(--fg); text-decoration: none; opacity: .8; white-space: nowrap; }
 .localnav a.link:hover { opacity: 1; }
-.localnav .pill { font-size: 12px; font-weight: 500; color: #fff; background: var(--fg); border-radius: 980px; padding: 4px 12px; white-space: nowrap; }
 @media (max-width: 720px) { .localnav a.link { display: none; } }
-@media (max-width: 359px) { .localnav .wrap { gap: 12px; } }
 
 /* ── hero ──────────────────────────────────────────────────────────────── */
 .hero { padding-block: clamp(28px, 4vw, 48px) clamp(64px, 9vw, 110px); }
-.hero .product { font-size: clamp(48px, 7.5vw, 80px); font-weight: 300; letter-spacing: -0.01em; line-height: 1.1; }
+.hero .product { font-size: clamp(48px, 6vw, 64px); font-weight: 300; letter-spacing: -0.01em; line-height: 1.1; }
 .hero .origin { margin-top: 18px; font-size: clamp(15px, 1.6vw, 17px); color: var(--muted); letter-spacing: 0.04em; }
 .hero .origin b { color: var(--fg); font-weight: 700; }
 .hero .roles { margin-top: 8px; font-size: clamp(13px, 1.4vw, 15px); color: var(--muted); letter-spacing: 0.02em; }
 .hero .roles span { display: inline-block; }
-.hero h1 { font-size: clamp(48px, 9vw, 96px); line-height: 1.04; letter-spacing: -0.025em; margin-top: 6px; }
-.hero .lede { font-size: clamp(19px, 2.4vw, 25px); line-height: 1.5; font-weight: 500; color: var(--muted); max-width: 30em; margin: 26px auto 0; }
+.hero h1 { font-size: clamp(48px, 7.2vw, 76px); line-height: 1.04; letter-spacing: -0.025em; margin-top: 6px; }
+.hero .lede { font-size: clamp(18px, 2vw, 21px); line-height: 1.5; font-weight: 500; color: var(--muted); max-width: 30em; margin: 26px auto 0; }
 .hero .lede strong { color: var(--fg); font-weight: 700; }
 .setup { font-size: 15px; color: var(--faint); margin-top: 14px; }
 .role-sum { font-size: 14px; line-height: 1.75; color: var(--muted); max-width: 620px; margin: 22px auto 0; }
@@ -92,7 +90,7 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
 .compare figure:last-child { position: absolute; right: 0; bottom: 0; width: 25.5%; z-index: 1; }
 .compare figure:last-child .device { filter: drop-shadow(0 2.4cqw 4cqw rgba(0,0,0,.28)); }
 .compare figure { margin: 0; min-width: 0; container-type: inline-size; }
-.figcap { font-size: clamp(15px, 1.8vw, 19px); font-weight: 600; color: var(--muted); margin-top: 16px; text-align: center; }
+.figcap { font-size: clamp(15px, 1.5vw, 16px); font-weight: 600; color: var(--muted); margin-top: 16px; text-align: center; }
 .device { position: relative; max-width: 100%; padding: 1.25cqw; border-radius: 16.5cqw;
   background: #c9cacd;
   box-shadow: 0 34px 60px -26px rgba(10,12,16,0.40), 0 8px 18px -8px rgba(10,12,16,0.20); }
@@ -173,7 +171,7 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
 .bento { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: clamp(40px, 6vw, 64px); }
 .tile { background: var(--tile-night); border-radius: 24px; padding: 30px 26px 28px; min-width: 0; display: flex; flex-direction: column; gap: 8px; }
 .tile .from { font-size: 15px; color: var(--on-night-muted); font-weight: 500; }
-.tile .to { font-size: clamp(24px, 3vw, 30px); font-weight: 700; letter-spacing: -0.01em; color: var(--on-night); line-height: 1.25; }
+.tile .to { font-size: clamp(22px, 2.6vw, 26px); font-weight: 700; letter-spacing: -0.01em; color: var(--on-night); line-height: 1.25; }
 .tile.wide-tile { grid-column: span 2; justify-content: center; }
 @media (max-width: 720px) { .bento { grid-template-columns: repeat(2, 1fr); } .tile.m-wide { grid-column: span 2; } }
 .tile .nw { white-space: nowrap; }
@@ -220,7 +218,7 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
   .cmp-row > span:nth-child(3)::before { content: "Tailscale"; }
   .cmp-row > span:nth-child(4)::before { content: "自前サーバー"; }
 }
-.eco-title { font-size: clamp(24px, 3vw, 32px); margin: clamp(56px, 8vw, 88px) 0 0; letter-spacing: -0.01em; }
+.eco-title { font-size: clamp(22px, 2.6vw, 27px); margin: clamp(56px, 8vw, 88px) 0 0; letter-spacing: -0.01em; }
 .eco-lede { font-size: 17px; line-height: 1.7; color: var(--muted); max-width: 36em; margin: 14px auto 0; }
 .eco { display: grid; grid-template-columns: 1fr 1.05fr 1fr; gap: 16px; align-items: stretch; margin-top: 32px; text-align: left; }
 .eco-node { background: var(--bg); border-radius: 24px; padding: 26px 24px; min-width: 0; }
@@ -301,7 +299,7 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
 }
 
 /* ── made with AI ──────────────────────────────────────────────────────── */
-.made p.body { font-size: 19px; line-height: 1.75; color: var(--muted); max-width: 34em; margin: 26px auto 0; }
+.made p.body { font-size: 17px; line-height: 1.75; color: var(--muted); max-width: 34em; margin: 26px auto 0; }
 .timeline { list-style: none; margin: clamp(36px, 5vw, 52px) auto 0; padding: 0; max-width: 860px; display: grid;
   grid-template-columns: repeat(3, 1fr); gap: 18px; text-align: left; }
 .timeline li { border-top: 2px solid var(--fg); padding-top: 16px; min-width: 0; }
@@ -312,7 +310,7 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
 .made p.body.left { text-align: left; max-width: 860px; }
 .band-night.made p.body { color: var(--on-night-muted); }
 #story .wrap > .eyebrow, #story .wrap > .headline, #made .wrap > .eyebrow, #made .wrap > .headline, #made .wrap > p.body { text-align: left; max-width: 860px; margin-left: auto; margin-right: auto; }
-#made .wrap > .headline { text-wrap: wrap; font-size: clamp(26px, 3.6vw, 38px); line-height: 1.3; letter-spacing: -0.005em; }
+#made .wrap > .headline { text-wrap: wrap; font-size: clamp(24px, 3vw, 32px); line-height: 1.3; letter-spacing: -0.005em; }
 #made .wrap > .eyebrow { font-size: 15px; }
 #made .role-table { margin-top: 24px; margin-bottom: 0; }
 #made .review-table { margin-top: 18px; margin-bottom: 0; }
@@ -324,7 +322,7 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
 .handover h4 { font-size: 18px; margin: 4px 0 0; }
 .handover > div > p:last-child { font-size: 14px; line-height: 1.65; color: var(--muted); margin: 8px 0 0; }
 @media (max-width: 640px) { .handover { grid-template-columns: 1fr; } }
-.made-sub { font-size: 21px; margin: clamp(40px, 5vw, 56px) auto 0; max-width: 860px; text-align: left; }
+.made-sub { font-size: 19px; margin: clamp(40px, 5vw, 56px) auto 0; max-width: 860px; text-align: left; }
 .decisions { max-width: 860px; margin: 14px auto 0; padding: 0; list-style: none; text-align: left; }
 .decisions li { font-size: 15px; line-height: 1.7; color: var(--muted); padding: 12px 0; border-bottom: 1px solid #d2d2d7; }
 .decisions b { color: var(--fg); }
@@ -364,7 +362,7 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
 /* ── availability (black) ─────────────────────────────────────────────── */
 #available .wrap { text-align: left; }
 #available .next { display: block; }
-.soon { font-size: clamp(26px, 3.4vw, 36px); font-weight: 700; letter-spacing: -0.01em; line-height: 1.2; margin-top: 0; color: var(--on-night); }
+.soon { font-size: clamp(24px, 2.8vw, 30px); font-weight: 700; letter-spacing: -0.01em; line-height: 1.2; margin-top: 0; color: var(--on-night); }
 .next { display: inline-block; text-align: left; margin-top: 28px; }
 .next-title { font-size: 14px; font-weight: 600; color: var(--on-night-muted); margin: 0; }
 .next ul { margin: 8px 0 0; padding-left: 1.2em; }
@@ -397,7 +395,6 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
     <a class="link" href="#gestures">操作</a>
     <a class="link" href="#connect">つなぎ方</a>
     <a class="link" href="#specs">仕様</a>
-    <span class="pill">リリース準備中</span>
   </div>
 </nav>
 
